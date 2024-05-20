@@ -1,0 +1,136 @@
+body {
+    background-color: #0f1a20;
+    font-family: "Courier New", Courier, monospace;
+}
+
+#hero {
+    color: white;
+    height: 100vh;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#hero h1 {
+    font-family: "Open sans", sans-serif;
+    font-size: 96px;
+    animation: fadein ease-in 1s;
+}
+
+#hero h3 {
+    animation-delay: 2s;
+    animation-name: fadein;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+#hero code {
+    margin-top: 20px;
+    font-size: 30px;
+    text-align: center;
+    animation-delay: 4s;
+    animation-name: fadein;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    #intro h1 {
+        font-size: 48px;
+    }
+
+    #hero code {
+        font-size: 16px;
+    }
+}
+
+#hero h3 {
+    font-family: "Jersey 15", sans-serif;
+    margin-top: 20px;
+}
+
+#arrowDown {
+    font-size: 75px;
+    position: absolute;
+    bottom: 30px;
+    left: calc(50% - 37.5px);
+}
+
+#about {
+    color: white;
+    background: black;
+    padding: 30px;
+}
+
+p {
+    font-size: 16px;
+}
+
+#contact {
+    background: gray;
+    color: white;
+    padding: 30px;
+}
+
+.row {
+    margin-bottom: 15px;
+}
+
+a {
+    color: white;
+}
+
+input,
+textarea {
+    padding: 10px;
+    width: 100%;
+}
+
+.btn {
+    width: 100%;
+}
+
+#portfolio {
+    padding: 30px;
+    background: blue;
+    color: white;
+}
+
+footer {
+    padding: 30px;
+    background: black;
+    color: white;
+}
+
+#about,
+#contact,
+#portfolio {
+    box-shadow: -10px 0px 25px black;
+}
+
+/* .col {
+    border: 1px solid red;
+} */
+
+.bg-dark {
+    background-color: darkslategray !important;
+}
+
+#project {
+    background: skyblue;
+    color: white;
+    padding: 30px;
+}
+
+.badge {
+    background-color: black;
+    margin-right: 5px;
+}
